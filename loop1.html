@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        
+
+    </ol>
+    
+    <script>
+       let MyBio={
+            name:'Hein Htet Aung',
+            age:18,
+            Address:"Monywa",
+            work:"Developer",
+
+            // ShowINfo : function () {
+            //     return `I'm ${this.name}, ${this.age} years old (${this.BDYear(this.age)}) and was born in ${this.Address}. Now I'm working as ${this.work} in Japan`;
+            // },
+            // BDYear: function(age){
+            //     return 2020-age;
+            // },
+        };
+    function showhello(max){
+        for(let i=0;i<=max;i++){
+            if(i==10){
+                
+                //break;
+                continue;
+            }
+            document.write(`${i} Hello<br>`);
+        }
+    }
+    showhello(20);
+    let arr=["white","yellow","blue","green","brown"];
+    // for (let index = 0; index < arr.length; index++) {
+    //     document.querySelector("0l").innerHTML+=`<li> 
+    //      ${arr[index]} </li>`;
+        
+    // }
+
+    //forin
+    // for(x in arr){
+    //     document.querySelector("ol").innerHTML+=` <li> ${arr[x]}</li> `;
+    // }
+    //for of
+    // for(x of arr){
+    //     document.querySelector("ol").innerHTML+=` <li> ${x}</li> `;
+    // }
+
+        //array of map
+        // arr.map(function(el,index) {
+        //     document.querySelector("ol").innerHTML+=` <li> ${el}</li> `;
+        // });
+
+        // for(x in MyBio){
+        //     document.querySelector("ol").innerHTML+=`<li>${x}-${MyBio[x]} </li>`
+        // }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="ask">ပမာဏထည့်ရန်</label>
+    &nbsp;
+    <input type="number">
+    &nbsp;
+    <button onclick="askbill()">confirm</button>
+    <script>
+        let y=window.confirm("Billချေးချင်လို့ ရလား");
+            alert(y);
+            if(y){
+                window.alert("ဘယ်လောက်ချေးချင်တာတုန်း ပြောကြည့်လေ");
+            }
+            else{
+                window.alert("Sorry bro:( ငါ့လည်းနည်းနည်းပဲရှိတာ ဘယ်လောက်လိုချင်တာလဲ");
+            }
+            
+            
+        function askbill(){
+            let bill=document.querySelector("input").value;
+            
+            if(bill<=15000){
+               let x= window.confirm(`${bill} ဆိုရတယ်ငါ့ကောင်ရေ အဆင်ပြေမှသာပြန်ပေးရတယ်ရယ်😊 မပေးရင်တော့ မင်းညီမလာသိမ်းမှာ ဒါပဲ🤣`);
+              alert(x);
+              if(x){
+                window.alert("LOL🤣 a par kywar");}
+                else{
+                window.alert("Sorry bro :) လိုချင်လာယူ ပိုက်ဆံတော့ပြန်မပေးတော့ဘူး ဒါပဲ🙂");
+            }
+            
+                
+            }
+            if (bill>15000){
+                window.alert(`${bill}ဆိုအဲလောက်တော့မရှိဘူးဟ:(`);
+                }
+            }
+           
+        
+                
+            
+    </script>
+</body>
+</html>

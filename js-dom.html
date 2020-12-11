@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        h3{
+            border: 2px solid blue;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            width: 275px;
+        }
+        
+        input{
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        button{
+            width: 50px;
+            margin-bottom: 10px;
+            height: 30px;
+        
+        }
+    </style>
+
+</head>
+<table>
+    
+        <h3 id="result">Will display Here</h3>
+        <tr >
+            <td>
+                <input id="input" type="text" placeholder="type here">
+            </td>
+            <td>
+                <button id="addBtn" >Add</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input id="color" type="color" >
+            </td>
+                <td>
+                    <button id="setBtn" >Set</button>
+                </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input id="num" type="number" placeholder="type font size">
+            </td>
+                <td>
+                    <button id="setbtn1"  onclick="fun()">Set</button>
+                </td>
+        </tr>
+
+        <script>
+            let result=document.getElementById("result");
+           document.getElementById("addBtn").onclick=function()
+           {
+               let x=document.getElementById("input").value; 
+               result.innerHTML=x;
+               document.getElementById("input").value="";
+               console.log(`Changed to ${x}`);
+            }
+
+           
+                document.getElementById("setBtn").addEventListener("click",function(){
+                    let x=document.getElementById("color").value;
+                    result.style.color=x;
+                    console.log(`Changed to ${x}`);
+                })
+
+               function fun(){
+                    let x=document.getElementById("num").value;
+                   result.style.fontSize=x+"px";
+                    console.log(`Changed to ${x}px`);
+                }
+            
+        </script>
+    
+</table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <button onclick="myunction()">Click</button>
+    <script>
+        // function one() {
+        //     console.log("This is function one");
+        // }
+        // function two(){
+        //     let x="x is variable";
+        //     console.log(x);
+        // }
+        // function three(x,y) {
+        //     let r=x+y;
+        //     console.log(`This is result ${r} `);
+        //     return(r);
+        // }
+        // function four(x,y=1){
+        //     console.log({x,y});
+        // }
+        
+        // document.querySelector("button").onclick=function(){
+        //     console.log("This is five function");
+        // }
+
+        // document.querySelector("button").addEventListener(click,function(){
+        //     console.log("This is sixth ");
+        // })
+
+        //iife  ()();
+
+
+        // (function(){
+        //     console.log("This is iife pattern");
+        // })();
+
+
+        // //arrow function
+
+        // let one=()=>console.log("This is arrow one");
+
+        // let two=()=>{
+        //     let x="x is variable";
+        //     console.log(x);}
+        
+        // let three=x =>console.log(x);
+
+        // let four=(x,y) =>{
+        //     let r=x+y;
+        //     console.log("this is result"+r);
+        // }
+
+        // document.querySelector("button").onclick=()=>{
+        //     console.log("san kyi tar ");
+        // }
+
+        // (()=>console.log("This is iife pattern written by arrow function"))
+        // ();
+        function myFunction() {
+  let uri = "my test.asp?name=ståle&car=saab";
+  let enc = encodeURI(uri);
+     let dec = decodeURI(enc);
+  let res = "Encoded URI: " + enc + "<br>" + "Decoded URI: " + dec;
+  document.getElementById("demo").innerHTML = res;
+}
+    </script>
+</body>
+</html>
